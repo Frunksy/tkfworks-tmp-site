@@ -17,27 +17,40 @@
   </header>
 
   <main class="wrap">
-    <h2>Contact</h2>
+  <h2>Contact</h2>
 
-    <p>
-      Email:
-      <a href="mailto:contact@tkfworks.com.au">contact@tkfworks.com.au</a>
-    </p>
+  <p class="hint">
+    Australia-wide service. Remote support available, with on-site by arrangement.
+  </p>
 
-    <h3>To get an accurate response, include</h3>
-    <ul>
-      <li>Your business / industry (and where you’re located)</li>
-      <li>What you want to improve (workflow, quoting, leadership, software, safety)</li>
-      <li>Team size and any key constraints (time, budget, deadlines)</li>
-      <li>What “success” looks like for you</li>
-    </ul>
+  <form method="POST" action="https://formspree.io/f/REPLACE_ME">
+    <label>
+      Name
+      <input name="name" autocomplete="name" required />
+    </label>
 
-    <p class="hint">
-      If you want a contact form on this page, tell me whether you prefer Formspree (easy) or a custom solution
-      and I’ll add it.
-    </p>
-  </main>
+    <label>
+      Email
+      <input type="email" name="email" autocomplete="email" required />
+    </label>
 
+    <label>
+      Company (optional)
+      <input name="company" autocomplete="organization" />
+    </label>
+
+    <label>
+      Message
+      <textarea name="message" rows="6" required placeholder="What are you trying to improve? (Workflow / software / quoting & estimating SMP / leadership / safety talks)"></textarea>
+    </label>
+
+    <button type="submit">Send message</button>
+  </form>
+
+  <p class="hint">
+    Prefer email? <a href="mailto:contact@tkfworks.com.au">contact@tkfworks.com.au</a>
+  </p>
+</main>
   <footer class="wrap footer">
     <small>© TKF Works</small>
   </footer>
